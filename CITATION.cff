@@ -1,13 +1,26 @@
 cff-version: 1.0.1
-message: "If you use this software, please cite it as follows."
-title: "Praat Script for Extracting Dynamic Vowel Formants"
+message: "If you use this software, please cite it using the preferred citation below."
+
+title: "Praat Script for Dynamic Vowel Formants Extraction"
 version: "1.0.1"
-doi: 10.5281/zenodo.20999849
-date-released: 2026-08-01
 
 authors:
   - family-names: "Velayudhan"
     given-names: "Anugil"
 
-repository-code: "https://github.com/anugilv/Praat-Script-for-Extracting-Dynamic-Vowel-Formants-Version-1.1"
-license: MIT
+date-released: "2026-08-01"
+
+repository-code: "https://github.com/anugilv/Praat-Script-for-Dynamic-Vowel-Formant-Extraction-v1.0.1"
+
+license: "MIT"
+
+preferred-citation:
+  type: software
+  authors:
+    - family-names: "Velayudhan"
+      given-names: "Anugil"
+  title: "Praat Script for Dynamic Vowel Formants Extraction"
+  version: "1.0.1"
+  year: 2026
+  publisher: "Zenodo"
+  doi: "https://doi.org/10.5281/zenodo.20999849"
