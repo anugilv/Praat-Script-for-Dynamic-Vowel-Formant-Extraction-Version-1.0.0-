@@ -1,4 +1,4 @@
-Instructions for Using the Praat Script for Extracting Dynamic Vowel Formants (Version 1.0.0)
+Instructions for Using the Praat Script for Extracting Dynamic Vowel Formants (Version 1.0.1)
 
 This Praat script automates the extraction of various acoustic parameters from annotated speech data. It processes TextGrid and WAV files from a specified directory, extracting formant values and other acoustic features based on different annotation tiers.
 
@@ -6,9 +6,9 @@ I. Required File Setup:
 
 1. Ensure each WAV file has a corresponding TextGrid file in the same directory.
    
-2. It is recommended that the files be organized by speaker gender (e.g., separate folders for male and female speakers).
+2. It is recommended that the files be organised by speaker gender (e.g., separate folders for male and female speakers).
    
-3. The annotation structure should ideally contain three tiers: Phone (Tier 1), Syllable (Tier 2), and Word (Tier 3). However, the script can function with fewer tiers by altering the script.
+3. The annotation structure should ideally contain three tiers: Phone (Tier 1), Syllable (Tier 2), and Word (Tier 3). However, the script can function with fewer tiers by making changes.
    
 II. Extracted Features by Annotation Tiers:
 
