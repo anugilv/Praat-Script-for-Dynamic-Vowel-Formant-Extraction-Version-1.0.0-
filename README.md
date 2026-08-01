@@ -1,4 +1,4 @@
-Instructions for Using the Praat Script for Extracting Dynamic Vowel Formants (Version 1.0.1)
+Instructions for Using the Praat Script for Extracting Dynamic Vowel Formants v1.0.1
 
 This Praat script automates the extraction of various acoustic parameters from annotated speech data. It processes TextGrid and WAV files from a specified directory, extracting formant values and other acoustic features based on different annotation tiers.
 
