@@ -1,4 +1,4 @@
-# Praat Script for Extracting Dynamic Vowel Formants (v1.0.1)
+# Praat Script for Dynamic Vowel Formants Extraction (v1.0.1)
 
 A Praat script for automatically extracting dynamic vowel formants and other acoustic measurements from annotated speech recordings.
 
