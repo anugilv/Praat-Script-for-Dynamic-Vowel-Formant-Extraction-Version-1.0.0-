@@ -1,50 +1,60 @@
 # Praat Script for Extracting Dynamic Vowel Formants (v1.0.1)
 
+A Praat script for automatically extracting dynamic vowel formants and other acoustic measurements from annotated speech recordings.
+
+---
+
 ## Overview
 
-This Praat script automates the extraction of dynamic vowel formants and other acoustic measurements from annotated speech recordings. It processes paired **WAV** and **TextGrid** files in a specified directory and extracts acoustic features based on the annotation tiers.
+This script automates the extraction of acoustic features from paired **WAV** and **TextGrid** files. It is designed for phonetic and speech science research, enabling efficient extraction of vowel formants, durations, pitch, intensity, and annotation information for downstream statistical analysis.
 
-The script is designed for phonetic and speech science research and can be used to generate datasets for statistical analysis, visualisation, and machine learning applications.
+The script processes an entire directory of recordings and generates a tabular output that can be imported into **R**, **Python**, **Excel**, **SPSS**, **JASP**, or **Jamovi**.
 
 ---
 
 ## Features
 
-The script automatically extracts:
+The script extracts:
 
-* Dynamic formant trajectories (F1, F2, F3)
-* Mean formant values (F1, F2, F3)
-* Vowel duration
+* Dynamic F1, F2, and F3 trajectories
+* Mean F1, F2, and F3
 * Mean fundamental frequency (F0)
 * Mean intensity
-* Vowel labels
+* Vowel duration
+* Phone labels
 * Syllable labels and durations
 * Word labels and durations
 
 ---
 
-## Required File Structure
+# File Preparation
 
-For the script to run correctly:
+Before running the script, ensure the following requirements are met.
 
-1. Each **WAV** file must have a corresponding **TextGrid** file with the **same filename**.
+## 1. File Pairing
 
-   **Example:**
+Each **WAV** file must have a corresponding **TextGrid** file with the **same filename**.
 
-   ```text
-   Speaker01.wav
-   Speaker01.TextGrid
-   ```
+**Example**
 
-2. Store the paired files in the same directory.
+```text
+Speaker01.wav
+Speaker01.TextGrid
+```
 
-3. For large datasets, it is recommended to organise recordings by speaker groups (e.g., separate folders for male and female speakers), although this is optional.
+Both files should be stored in the same directory.
 
 ---
 
-## TextGrid Annotation Requirements
+## 2. Folder Organisation
 
-The script is designed to work with the following annotation structure:
+For large corpora, it is recommended to organise recordings by speaker groups (e.g., separate folders for male and female speakers). This is optional but simplifies corpus management.
+
+---
+
+## 3. TextGrid Structure
+
+The script is designed to work with the following three-tier annotation structure.
 
 | Tier   | Annotation |
 | ------ | ---------- |
@@ -52,30 +62,38 @@ The script is designed to work with the following annotation structure:
 | Tier 2 | Syllable   |
 | Tier 3 | Word       |
 
-The script can also be adapted for TextGrids with fewer tiers by modifying the relevant tier indices in the source code.
+### Ideal Tier Structure
+
+![Ideal Tier Structure](https://github.com/user-attachments/assets/b03ec443-ddbd-44ae-a651-479d08960470)
+
+**Figure 1.** Ideal TextGrid tier structure required by the script.
+
+> **Note**
+>
+> The script assumes the tier order shown above. If your TextGrid uses a different tier order or contains fewer tiers, you will need to modify the tier indices in the Praat script accordingly.
 
 ---
 
-## Extracted Acoustic Measurements
+# Acoustic Measurements
 
-### Tier 1 — Phone
+## Tier 1 – Phone
 
-For each annotated vowel, the script extracts:
+For every vowel interval, the script extracts:
 
-* Vowel label
+* Phone label
 * Vowel duration
-* Dynamic F1 values (0–100% of vowel duration)
-* Dynamic F2 values (0–100% of vowel duration)
-* Dynamic F3 values (0–100% of vowel duration)
+* Dynamic F1 (0–100% of vowel duration)
+* Dynamic F2 (0–100% of vowel duration)
+* Dynamic F3 (0–100% of vowel duration)
 * Mean F1
 * Mean F2
 * Mean F3
-* Mean fundamental frequency (F0)
+* Mean F0
 * Mean intensity
 
 ---
 
-### Tier 2 — Syllable
+## Tier 2 – Syllable
 
 For the corresponding syllable:
 
@@ -84,7 +102,7 @@ For the corresponding syllable:
 
 ---
 
-### Tier 3 — Word
+## Tier 3 – Word
 
 For the corresponding word:
 
@@ -93,9 +111,9 @@ For the corresponding word:
 
 ---
 
-## Output
+# Output
 
-The script generates a tabular output containing one row per vowel token. The output includes:
+The script generates a tab-delimited output file where each row represents a vowel token and includes:
 
 * File information
 * Annotation labels
@@ -103,65 +121,49 @@ The script generates a tabular output containing one row per vowel token. The ou
 * Dynamic formant trajectories
 * Mean acoustic measurements
 
-The resulting dataset can be imported directly into software such as:
-
-* R
-* Python (Pandas)
-* SPSS
-* JASP
-* Jamovi
-* Excel
+The output can be imported directly into statistical software for further analysis.
 
 ---
 
-## Recommended Workflow
+# Recommended Workflow
 
 1. Prepare paired **WAV** and **TextGrid** files.
-2. Verify that TextGrid annotations follow the required tier structure.
+2. Verify the TextGrid tier structure.
 3. Open the script in Praat.
-4. Specify the input directory and output filename.
+4. Specify the input folder and output filename.
 5. Run the script.
-6. Import the generated data into your preferred statistical software for analysis.
+6. Analyse the extracted data in your preferred statistical software.
 
 ---
 
-## Version
+# Version
 
-**Current Version:** **v1.0.1**
+**Current Release:** **v1.0.1**
 
-### What's New in v1.0.1
+### Changes in v1.0.1
 
 * Minor bug fixes
-* Improved code stability
-* Documentation updates
+* Improved stability
+* Updated documentation
 
 ---
 
-## Citation
+# Citation
 
-If you use this script in your research, please cite the associated publication (if available) or acknowledge the script in your methodology section.
-
----
-
-## License
-
-This project is released under the **MIT License**.
+If you use this script in academic work, please cite the associated publication (if available) or acknowledge this repository in your methodology section.
 
 ---
 
-## Contact
+# License
+
+This project is distributed under the **MIT License**.
+
+---
+
+# Author
 
 **Anugil V**
 
 Language Analyst (Contract)
 
 International Centre for Free and Open Source Solutions (ICFOSS), Government of Kerala, India
-
-For questions, suggestions, or bug reports, please open an issue in this repository.
-
-Figure 01: Ideal Tier Structure for the Script.
-![Ideal Tier](https://github.com/user-attachments/assets/b03ec443-ddbd-44ae-a651-479d08960470)
-
-
-
-   
