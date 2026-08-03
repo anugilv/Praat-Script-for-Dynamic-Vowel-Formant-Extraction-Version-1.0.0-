@@ -48,7 +48,7 @@ Both files should be stored in the same directory.
 
 ## 2. Folder Organisation
 
-For large corpora, it is recommended to organise recordings by speaker groups (e.g., separate folders for male and female speakers). This is optional but simplifies corpus management.
+For large corpora, it is recommended to organise recordings by speaker groups (e.g., separate folders for male and female speakers). This is optional, but simplifies corpus management.
 
 ---
 
@@ -173,5 +173,7 @@ This project is distributed under the **MIT License**.
 # Author
 
 **Anugil Velayudhan**
+
 Language Analyst
-International Centre for Free and Open Source Solutions (ICFOSS), Government of Kerala, India.
+
+[International Centre for Free and Open Source Solutions (ICFOSS)](https://icfoss.in/), Government of Kerala, India.
