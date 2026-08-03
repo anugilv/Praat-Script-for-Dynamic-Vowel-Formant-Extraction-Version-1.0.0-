@@ -172,8 +172,6 @@ This project is distributed under the **MIT License**.
 
 # Author
 
-**Anugil V**
-
-Language Analyst (Contract)
-
-International Centre for Free and Open Source Solutions (ICFOSS), Government of Kerala, India
+**Anugil Velayudhan**
+Language Analyst
+International Centre for Free and Open Source Solutions (ICFOSS), Government of Kerala, India.
