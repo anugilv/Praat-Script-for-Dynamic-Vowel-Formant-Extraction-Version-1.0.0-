@@ -148,9 +148,19 @@ The output can be imported directly into statistical software for further analys
 
 ---
 
-# Citation
+## Citation
 
-If you use this script in academic work, please cite the associated publication (if available) or acknowledge this repository in your methodology section.
+If you use this script in your research, please cite the software and, where appropriate, one or more of the publications that employed it.
+
+### Software
+
+> Velayudhan, A. (2026). *Praat Script for Dynamic Vowel Formants Extraction* (Version 1.0.1) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.20999849
+
+### Publications
+
+Velayudhan, A., Surendran, S., & Krishna H. S., R. (2025). *Production of long and short vowels in Malayalam*. In **Proceedings of the UK and Ireland Speech Workshop 2025** (p. 39).
+
+Velayudhan, A., & Rajeev, R. R. (2025). *Variability in the formant dynamics of the schwa (/ə/) in word-final position in Malayalam*. In **Proceedings of the 47th International Conference of the Linguistic Society of India (ICOLSI-47)** (p. 29).
 
 ---
 
